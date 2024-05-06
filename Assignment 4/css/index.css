@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 120rem;
+    font-size: 1rem;
+}
+
+.section1 {
+    max-width: 120rem;
+    min-height: 95vh;
+    border: 1px solid transparent;
+    background-image: url(..//img/Section1-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 65% 100%;
+    background-color: #d7d7d7;
+}
+
+.section1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.section1 nav {
+    margin-top: 4.5rem;
+    padding-left: 15vw;
+}
+
+.section1 .group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    gap: 2rem;
+    padding: 0.8rem 1.5vw;
+}
+
+.section1 .group a {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    max-width: 9.1875rem;
+    height: 2.875rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+
+.section1 .group .ContactMe {
+    text-wrap: nowrap;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 1.875rem;
+    border: 4px solid #FFF;
+    background: #FFF;
+}
+
+.section1 .logo-mobile {
+    display: none;
+}
+
+.section1 .menu {
+    display: none;
+}
+
+/* start */
+.dropbtn {
+    /* background-color: #04AA6D; */
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    left: 0rem;
+    top: 3.66rem;
+    background-color: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    height: 3.5625;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+  /* end */
+
+@media screen and (max-width: 1055px) {
+    .section1 {
+        background-image: unset;
+    }
+    .section1 .group a {
+        color: black;
+    }
+}
+
+/* mobile view */
+@media screen and (max-width: 740px) {
+    .section1 nav {
+        height: 3.5625rem;
+        background-color: black;
+        margin-top: unset;
+        padding-left: 1.88rem;
+    }
+    .section1 .group {
+        display: none;
+    }
+    .section1 .logo-mobile {
+        display: flex;
+    }
+    .section1 .logo-desktop {
+        display: none;
+    }
+    .section1 .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section1 ul {
+        height: inherit;
+    }
+
+    .section1 .menu {
+        display: flex;
+        padding-right: 1.27rem;
+    }
+}
+
+/* mobileview end  */
+
+/* styles */
+.section1 .line1 {
+    margin-top: 2.13rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minMax(300px,1fr));
+    grid-auto-rows: minmax(34rem, auto);
+}
+
+.section1 .boxa {
+    /* border: 1px solid  red; */
+    padding-left: 15vw;
+}
+
+.section1 .text-desktop p.one {
+    color: #000;
+text-align: left;
+font-family: Raleway;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 8.87rem;
+}
+
+.section1 .text-desktop p.two {
+    color: #000;
+text-align: left;
+font-family: Raleway;
+font-size: 3.8vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-wrap: nowrap;
+margin-top: 3.38rem;
+}
+
+.section1 .text-desktop p.three {
+    color: #909090;
+text-align: left;
+font-family: Raleway;
+font-size: 1.1625vw;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.section1 .text-mobile {
+    display: none;
+}
+
+.section1 .boxa .icons {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.94rem;
+}
+
+
+.section1 .icons .i {
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 2.31256rem;
+    height: 2.21856rem;
+}
+
+.section1 .boxa .icon1 {
+    background-image: url(../img/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    
+}
+.section1 .boxa .icon2 {
+    background-image: url(../img/Vector\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    
+}
+.section1 .boxa .icon3 {
+    background-image: url(../img/Vector\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    
+}
+
+.section1 .boxb {
+    /* border: 1px solid  red; */
+    background-image: url(../img/image\ 17.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75% 100%;
+    position: relative;
+}
+
+.section1 .boxb .text {
+    position: absolute;
+    bottom: 0rem;
+    left: calc(100% / 2 - 8.5rem);
+    width: 8.5rem;
+    height: 3.75rem;
+    color: black;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 740px) {
+    .section1 {
+        background-image: url(../img/Background\ \(1\).svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
+    }
+    .section1 .text-mobile {
+        display: grid;
+    }
+    .section1 .text-desktop {
+        display: none;
+    }
+    .section1 .boxa {
+        padding: unset;
+        margin-top: 35vh;
+    }
+
+    .section1 .boxa p.one {
+        color: #FFF;
+        text-align: center;
+        font-family: "Advent Pro" sans-serif;
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section1 .boxa p.two {
+        color: #FFF;
+        text-align: center;
+        font-family: "Montserrat" sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .section1 .boxa p.three {
+        background-image: url(../img/separatorWhite\ 3.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 7.5rem;
+        height: 0.625rem;
+        margin-top: 0.88rem;
+    }
+
+    .section1 .boxa .text-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section1 .boxb {
+        display: none;
+    }
+
+    .section1 .boxa .icons {
+        justify-content: center;
+        margin-top: 1.75rem;
+    }
+
+    .section1 .icons .i {
+        background-color: unset;
+        box-shadow: unset;
+    }
+
+    .section1 .boxa .icon1 {
+        background-image: url(../img/cib_mail-ru.svg);
+     }
+    .section1 .boxa .icon2 {
+        background-image: url(../img/ant-design_github-filled.svg);
+     }
+    .section1 .boxa .icon3 {
+        background-image: url(../img/entypo-social_linkedin-with-circle.svg);
+     }
+
+     .section2 {
+        background-image: url(../img/Background\ \(2\).svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover
+     }
+
+     .section2 .mobile-text {
+        display: grid;
+     }
+
+     .section2 .desktop-text {
+        display: none;
+     }
+
+     .section1 .boxc {
+        padding: unset;
+        margin-top: 35vh;
+    }
+}
+/* text-mobile end */
+
+.mobile-text {
+    display: none;
+}
+
+
+.section2 {
+    max-width: 120rem;
+    height: 19.5625rem;
+    border: 1px solid transparent;
+    background-image: url(../img/Background\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section2 .boxc {
+    padding-left: 6.38rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .boxc p.four {
+    color: #FFF;
+font-family: Montserrat;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.34756rem;
+margin-top: 3.38rem;
+}
+
+.section2 .boxc p.five {
+    width: 55.75rem;
+    height: 5.5625rem;
+    color: #FFF;
+    text-align: justify;
+    font-family: "Open Sans";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.682%; 
+    margin-top: 2rem;
+}
+
+
+.section2 .boxc button {
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+    width: 8.6875rem;
+    height: 1.5625rem;
+    background: rgba(255, 255, 255, 0 );
+    color: #f7f4f4;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 1.5rem
+}
+
+
+.aboutme {
+    text-align: center;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
+    min-height: 34.4vh;
+    padding: 8.8rem 0rem;
+}
+
+.line4 img {
+    width: 10.625rem;
+    height: 0.75rem;
+}
+
+.aboutme .line1 button {
+    color: #000;
+text-align: center;
+font-family: Montserrat;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: 127.9%; /* 2.39813rem */
+letter-spacing: 0.66631rem;
+border: 8px solid #000;
+background: rgba(255, 255, 255, 0.00);
+    width: 25.25rem;
+height: 6.6875rem;
+}
+
+.aboutme .line2 p {
+    width: 47.6875rem;
+height: 2.9375rem;
+    color: #050505;
+text-align: center;
+font-family: "Open Sans";
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 400;
+line-height: 138.682%; /* 1.30013rem */
+
+}
